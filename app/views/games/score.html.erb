@@ -1,0 +1,12 @@
+<% if @word %>
+  <div class="container mt-5">
+    <h1>Result</h1>
+    <% if @message_type == :success %>
+      <p><strong>Congratulations!</strong> <%= @message %></p>
+    <% else %>
+      <p>Sorry but <strong><%= @word %></strong> <%= @message %></p>
+    <% end %>
+    <p>Total score: <strong><%= session[:score] %></strong></p>
+    <%= link_to "Play again", new_path %>
+  </div>
+<% end %>

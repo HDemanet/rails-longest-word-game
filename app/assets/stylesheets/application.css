@@ -13,3 +13,31 @@
  *= require_tree .
  *= require_self
  */
+
+ body {
+  font-family: Arial, Helvetica, sans-serif;
+ }
+
+ .grid {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 10px;
+  margin-bottom: 50px;
+}
+
+.letter-square {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(60, 161, 223);
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+#score {
+  margin-top: 50px;
+}
